@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css"></style>
+<title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-image: url('images/image004.png')">
+<table>
+<tr>
+	<td width="1800px">
+	<div id="menu" style="width: 1500px">
+		<ul>
+			<li><a href="Default.aspx">首頁</a></li>
+			<li><a href="List1.aspx">路線查詢</a></li>
+			<li><a href="Select.aspx">路徑設定</a></li>
+			<li><a href="Management.aspx">排班設定</a></li>
+			<li><a href="Company.aspx">公司資訊</a></li>
+            <li><a href="Edit.aspx">路線編輯</a></li>
+		</ul>
+	</div>
+	</td>
+	<td>
+		<div id ="red" align="right">
+			
+		</div>
+	</td>
+</tr>
+</table>
+<div id="page">
+	<div id="content">
+        <form id="form1" runat="server">
+            <div>
+                 <div style="height: 70px"></div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+	</div>
+</div>
+</body>
+
+</html>

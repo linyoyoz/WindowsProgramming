@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+ <link href="css/style.css" rel="stylesheet" type="text/css" />
+<title>Nunc tincidunt</title>
+<style type="text/css">
+</style>
+<asp:ContentPlaceHolder id="head" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+
+<body style="background-image: url('images/image004.png')">
+<table>
+<tr>
+	<td width="800px">
+	<div id="menu" style="width: 750px">
+		<ul>
+			<li><a href="Default.aspx">首頁</a></li>
+			<li><a href="#tabs-2">路線查詢</a></li>
+			<li><a href="#tabs-3">路徑設定</a></li>
+			<li><a href="#tabs-3">票價查詢</a></li>
+			<li><a href="#tabs-3">景點遊覽</a></li>
+		</ul>
+	</div>
+	</td>
+	<td>
+		<div id ="red" align="right">
+			<ul>
+				<li>登入</li>
+				<li>編輯</li>
+			</ul>
+		</div>
+	</td>
+</tr>
+</table>
+<div id="page">
+	<div id="content">
+        <form id="form1" runat="server">
+            <div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+	</div>
+</div>
+</body>
+
+</html>
